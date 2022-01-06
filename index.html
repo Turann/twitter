@@ -15,7 +15,7 @@
         rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Documentt</title>
+    <title>Documenttt</title>
 </head>
 <body>
     <!-- main page -->
@@ -102,10 +102,10 @@
             <div class="login-content">
                 <h2>Log in to Twirrer</h2>
                 <form class="login-form">
-                    <input type="text" placeholder="Phone, email, or username">
-                    <input type="text" placeholder="Password">
+                    <input type="text" class="login-user-info" placeholder="Phone, email, or username">
+                    <input type="text" class="login-password" placeholder="Password">
                     <div class="login-form-bottom-side">
-                        <button type="button">Log in</button>
+                        <button type="button" class="login-login-btn">Log in</button>
                         <input type="checkbox" class="check" id="check">
                         <label for="check">Remember me</label>
                         <a href="#">Forgot your password?</a>
@@ -343,6 +343,31 @@
         <button type="button" class="post-btn">
             +<i class="fas fa-feather-alt"></i> Post
         </button>
+        <!-- post-modal -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <div class="modal-header">
+                    <i class="fas fa-times"></i>
+                    <button type="button">Post</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img">
+                        <img src="images/user1.jpg"/>
+                    </div>
+                    <input type="text" placeholder="What's happening?" class="modal-input">
+                    <i class="far fa-smile"></i>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-icons">
+                        <i class="far fa-image"></i>
+                        <i class="fas fa-camera"></i>
+                        <i class="far fa-chart-bar"></i>
+                        <span>+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of post-modal -->
     </section>
     <!-- end of feed page -->
     <script src="script.js"></script>
